@@ -60,3 +60,14 @@ def download_file(file, folder=False):
         files.download(filename)
     else:
         files.download(file)
+
+def get_file(file_id, filename):
+    """Import file from drive
+       
+       inputs:
+           file_id: Id of file to import
+           filename: name given to imported file, whole name with suffix
+    """
+    
+    file = drive.CreateFile({'id': file_id})
+    file.GetContentFile(filename)
