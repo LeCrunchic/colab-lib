@@ -1,2 +1,2 @@
 # colab-lib
-basic ass functions for common tasks in colaboratory
+basic ass abstractions for common tasks in colaboratory
