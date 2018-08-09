@@ -43,7 +43,7 @@ def list_files(folder_id):
            folder_id: folder to list files
     """
   
-    file_list = drive.ListFile({'q': f" {folder_id} in parents and trashed=false"}).GetList()
+    file_list = drive.ListFile({'q': f"{folder_id} in parents and trashed=false"}).GetList()
     for file in file_list:
         print(f"name: {file['title']}, Id: {file['id']}")
 
